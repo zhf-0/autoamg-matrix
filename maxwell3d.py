@@ -42,7 +42,7 @@ class Sindata(MaxwellPDE):
 class CreateData:
     def __init__(self,num):
         self.num = num
-        self.root_path = './Max3dData/'
+        self.root_path = './Maxwell3dData/'
         os.makedirs(self.root_path,exist_ok=True)
 
         np.random.seed(0)
@@ -64,7 +64,7 @@ class CreateData:
 
             print('========================================================')
             print(f'begin to run, mat id = {i}')
-            print(f'nx = {self.nx}, ny = {self.ny}, nz = {self.nz},')
+            print(f'nx = {self.nx}, ny = {self.ny}, nz = {self.nz}')
             print(f'wave number = {self.beta}')
 
             print('begin to generate matrix')
